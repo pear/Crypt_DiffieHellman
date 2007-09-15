@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.4.5" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+    http://pear.php.net/dtd/tasks-1.0.xsd
+    http://pear.php.net/dtd/package-2.0
+    http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Crypt_DiffieHellman</name>
+ <channel>pear.php.net</channel>
+ <summary>Implementation of Diffie-Hellman Key Exchange cryptographic protocol for PHP5</summary>
+ <description>Implementation of the Diffie-Hellman Key Exchange cryptographic protocol
+in PHP5. Enables two parties without any prior knowledge of each other
+establish a secure shared secret key across an insecure channel
+of communication.</description>
+ <lead>
+  <name>Pádraic Brady</name>
+  <user>padraic</user>
+  <email>padraic@php.net</email>
+  <active>yes</active>
+ </lead>
+ <date>2007-07-03</date>
+ <time>17:35:41</time>
+ <version>
+  <release>0.1.0a3</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://opensource.org/licenses/bsd-license.php">New BSD License</license>
+ <notes>* Updated tests location inside directory hierarchy for easier running
+* Fixed a PHP variable undefined notice
+* Full support for three input/output modes: Number (big integer string, Binary and Btwoc (big-endian two&apos;s complement)
+* Allowed for a specific BigInteger extension to be selected for use from the Crypt_DiffieHellman contructor
+* Minor typo fixes against PEAR Coding Standard
+* </notes>
+ <contents>
+  <dir baseinstalldir="Crypt" name="/">
+   <file baseinstalldir="Crypt" md5sum="287afa84fdabf27aa41ae373275ccd70" name="DiffieHellman/Exception.php" role="php" />
+   <file baseinstalldir="Crypt" md5sum="855be057326f2a95700e3cc302c7cbe3" name="DiffieHellman/Math.php" role="php" />
+   <file baseinstalldir="Crypt" md5sum="11eb59e5f41d43cbed34b90f253df124" name="DiffieHellman/Math/BigInteger.php" role="php" />
+   <file baseinstalldir="Crypt" md5sum="d29869653ff4f9968ad27bebd97b7419" name="DiffieHellman/Math/Exception.php" role="php" />
+   <file baseinstalldir="Crypt" md5sum="33fab4435fdd3633149ba213cd33862a" name="DiffieHellman/Math/BigInteger/Bcmath.php" role="php" />
+   <file baseinstalldir="Crypt" md5sum="78050a452009848a4a4bf9bb90ca82c2" name="DiffieHellman/Math/BigInteger/Exception.php" role="php" />
+   <file baseinstalldir="Crypt" md5sum="05f6f55666ee35c59c2ca6c7014aaf62" name="DiffieHellman/Math/BigInteger/Gmp.php" role="php" />
+   <file baseinstalldir="Crypt" md5sum="98a62bcbd00f31a25028793c0edaecdc" name="DiffieHellman/Math/BigInteger/Interface.php" role="php" />
+   <file baseinstalldir="Crypt" md5sum="ada66fc5037bed849043fa589cef4c41" name="tests/AllTests.php" role="test" />
+   <file baseinstalldir="Crypt" md5sum="9c41ff93af3045e5c169d70794cc4938" name="tests/DiffieHellmanTest.php" role="test" />
+   <file baseinstalldir="Crypt" md5sum="81db1d6b1750815fb7ce64512fc48ef6" name="tests/TestConfiguration.php.dist" role="test" />
+   <file baseinstalldir="Crypt" md5sum="2905836b0402bd79dbc8a54202aa133f" name="tests/TestHelper.php" role="test" />
+   <file baseinstalldir="Crypt" md5sum="72b7d83bb8992199c9ed901c4041b73f" name="DiffieHellman.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.0.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.0a1</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2007-06-22</date>
+   <license>New BSD License</license>
+   <notes>* This is the proposal version...</notes>
+  </release>
+  <release>
+   <version>
+    <release>0.1.0a2</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2007-06-29</date>
+   <license>New BSD License</license>
+   <notes>* Full support for three input/output modes: Number (big integer string, Binary and Btwoc (big-endian two&apos;s complement)
+* Allowed for a specific BigInteger extension to be selected for use from the Crypt_DiffieHellman contructor
+* Minor typo fixes against PEAR Coding Standard
+*</notes>
+  </release>
+  <release>
+   <version>
+    <release>0.1.0a3</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2007-07-03</date>
+   <license>New BSD License</license>
+   <notes>* Updated tests location inside directory hierarchy for easier running
+* Fixed a PHP variable undefined notice
+* Full support for three input/output modes: Number (big integer string, Binary and Btwoc (big-endian two&apos;s complement)
+* Allowed for a specific BigInteger extension to be selected for use from the Crypt_DiffieHellman contructor
+* Minor typo fixes against PEAR Coding Standard
+* </notes>
+  </release>
+ </changelog>
+</package>
