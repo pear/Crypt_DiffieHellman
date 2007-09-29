@@ -11,7 +11,7 @@ $options = array(
     'baseinstalldir'    => '/',
     'packagedirectory'  => './',
     'packagefile'       => $packagefile,
-    'clearcontents'     => false,
+    'clearcontents'     => true,
     'ignore'            => array('generate_package_xml.php', '.svn', '.cvs*'),
     'dir_roles'         => array(
         'docs'     => 'doc',
@@ -29,7 +29,7 @@ $packagexml->setDescription("Implementation of the Diffie-Hellman Key Exchange c
 
 $packagexml->setChannel('pear.php.net');
 
-$notes = <<EOT
+$notes = <<<EOT
 * Initial release!
 * Updated tests location inside directory hierarchy for easier running
 * Fixed a PHP variable undefined notice
