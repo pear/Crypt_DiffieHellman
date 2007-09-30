@@ -2,16 +2,13 @@
 require_once('PEAR/PackageFileManager2.php');
 PEAR::setErrorHandling(PEAR_ERROR_DIE);
 
-$packagefile = './package.xml';
-
 $options = array(
     'filelistgenerator' => 'cvs',
     'changelogoldtonew' => false,
     'simpleoutput'      => true,
-    'baseinstalldir'    => '/',
-    'packagedirectory'  => './',
-    'packagefile'       => $packagefile,
-    'clearcontents'     => true,
+    'baseinstalldir'    => 'Crypt',
+    'packagedirectory'  => dirname(__FILE__),
+    'clearcontents'     => false,
     'ignore'            => array('generate_package_xml.php', '.svn', '.cvs*'),
     'dir_roles'         => array(
         'docs'     => 'doc',
@@ -30,12 +27,7 @@ $packagexml->setDescription("Implementation of the Diffie-Hellman Key Exchange c
 $packagexml->setChannel('pear.php.net');
 
 $notes = <<<EOT
-* Initial release!
-* Updated tests location inside directory hierarchy for easier running
-* Fixed a PHP variable undefined notice
-* Full support for three input/output modes: Number (big integer string, Binary and Btwoc (big-endian twos complement)
-* Allowed for a specific BigInteger extension to be selected for use from the Crypt_DiffieHellman contructor
-* Minor typo fixes against PEAR Coding Standard
+* Fixed base install directory bug in package.xml
 EOT;
 $packagexml->setNotes($notes);
 
@@ -49,8 +41,8 @@ $packagexml->setLicense('New BSD License', 'http://opensource.org/licenses/bsd-l
 $packagexml->addRelease();
 $packagexml->generateContents();
 
-$packagexml->setAPIVersion('0.2.0');
-$packagexml->setReleaseVersion('0.2.0');
+$packagexml->setAPIVersion('0.2.1');
+$packagexml->setReleaseVersion('0.2.1');
 $packagexml->setReleaseStability('beta');
 $packagexml->setAPIStability('beta');
 

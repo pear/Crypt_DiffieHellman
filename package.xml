@@ -16,25 +16,20 @@ of communication.</description>
   <email>padraic@php.net</email>
   <active>yes</active>
  </lead>
- <date>2007-09-29</date>
- <time>15:25:41</time>
+ <date>2007-09-30</date>
+ <time>13:29:56</time>
  <version>
-  <release>0.2.0</release>
-  <api>0.2.0</api>
+  <release>0.2.1</release>
+  <api>0.2.1</api>
  </version>
  <stability>
   <release>beta</release>
   <api>beta</api>
  </stability>
  <license uri="http://opensource.org/licenses/bsd-license.php">New BSD License</license>
- <notes>* Initial release!
-* Updated tests location inside directory hierarchy for easier running
-* Fixed a PHP variable undefined notice
-* Full support for three input/output modes: Number (big integer string, Binary and Btwoc (big-endian twos complement)
-* Allowed for a specific BigInteger extension to be selected for use from the Crypt_DiffieHellman contructor
-* Minor typo fixes against PEAR Coding Standard</notes>
+ <notes>* Fixed base install directory bug in package.xml</notes>
  <contents>
-  <dir baseinstalldir="/" name="/">
+  <dir baseinstalldir="Crypt" name="/">
    <dir name="DiffieHellman">
     <dir name="Math">
      <dir name="BigInteger">
@@ -77,21 +72,16 @@ of communication.</description>
  <changelog>
   <release>
    <version>
-    <release>0.2.0</release>
-    <api>0.2.0</api>
+    <release>0.2.1</release>
+    <api>0.2.1</api>
    </version>
    <stability>
     <release>beta</release>
     <api>beta</api>
    </stability>
-   <date>2007-09-29</date>
+   <date>2007-09-30</date>
    <license uri="http://opensource.org/licenses/bsd-license.php">New BSD License</license>
-   <notes>* Initial release!
-* Updated tests location inside directory hierarchy for easier running
-* Fixed a PHP variable undefined notice
-* Full support for three input/output modes: Number (big integer string, Binary and Btwoc (big-endian twos complement)
-* Allowed for a specific BigInteger extension to be selected for use from the Crypt_DiffieHellman contructor
-* Minor typo fixes against PEAR Coding Standard</notes>
+   <notes>* Fixed base install directory bug in package.xml</notes>
   </release>
  </changelog>
 </package>
