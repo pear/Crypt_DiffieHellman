@@ -305,9 +305,13 @@ class Crypt_DiffieHellman
             require_once('Crypt/DiffieHellman/Exception.php');
             throw new Crypt_DiffieHellman_Exception('No prime number has been set');
         }
+
         if ($type == self::NUMBER) {
             return $this->_prime;
+        } else if ($type == self::BTWOC) {
+            return $this->_math->btwoc($this->_math->toBinary($this->_prime));
         }
+
         return $this->_math->toBinary($this->_prime);
     }
 
