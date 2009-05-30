@@ -120,7 +120,7 @@ class Crypt_DiffieHellman_Math extends Crypt_DiffieHellman_Math_BigInteger
     public function fromBinary($binary) {
         if (!$this instanceof Crypt_DiffieHellman_Math_BigInteger_Gmp) {
             $big = 0;
-            $length = strlen($binary);
+            $length = mb_strlen($binary, '8bit');
             for ($i = 0; $i < $length; $i++) {
                 $big = $this->_math->multiply($big, 256);
                 $big = $this->_math->add($big, ord($binary[$i]));
