@@ -345,6 +345,8 @@ class Crypt_DiffieHellman
         }
         if ($type == self::NUMBER) {
             return $this->_generator;
+        } else if ($type == self::BTWOC) {
+            return $this->_math->btwoc($this->_math->toBinary($this->_generator));
         }
         return $this->_math->toBinary($this->_generator);
     }
