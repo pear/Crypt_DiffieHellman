@@ -8,7 +8,7 @@ $options = array(
     'simpleoutput'      => true,
     'baseinstalldir'    => 'Crypt',
     'packagedirectory'  => dirname(__FILE__),
-    'clearcontents'     => false,
+    'clearcontents'     => true,
     'ignore'            => array('generate_package_xml.php', '.svn', '.cvs*'),
     'dir_roles'         => array(
         'docs'     => 'doc',
@@ -17,7 +17,7 @@ $options = array(
     ),
 );
 
-$packagexml = &PEAR_PackageFileManager2::importOptions($packagefile, $options);
+$packagexml = &PEAR_PackageFileManager2::importOptions('package.xml', $options);
 $packagexml->setPackageType('php');
 
 $packagexml->setPackage('Crypt_DiffieHellman');
@@ -27,22 +27,21 @@ $packagexml->setDescription("Implementation of the Diffie-Hellman Key Exchange c
 $packagexml->setChannel('pear.php.net');
 
 $notes = <<<EOT
-* Fixed base install directory bug in package.xml
+* Fixed Bug #16214
+* Fixed Bug #15682
 EOT;
 $packagexml->setNotes($notes);
 
-$packagexml->setPhpDep('5.0.0');
-$packagexml->setPearinstallerDep('1.4.0b1');
-$packagexml->addPackageDepWithChannel('required', 'PEAR', 'pear.php.net', '1.3.6');
+$packagexml->detectDependencies();
 
-$packagexml->addMaintainer('lead', 'padraic', 'Pádraic Brady', 'padraic@php.net');
+$packagexml->addMaintainer('lead', 'shupp', 'Bill Shupp', 'shupp@php.net');
 $packagexml->setLicense('New BSD License', 'http://opensource.org/licenses/bsd-license.php');
 
 $packagexml->addRelease();
 $packagexml->generateContents();
 
-$packagexml->setAPIVersion('0.2.1');
-$packagexml->setReleaseVersion('0.2.1');
+$packagexml->setAPIVersion('0.2.2');
+$packagexml->setReleaseVersion('0.2.2');
 $packagexml->setReleaseStability('beta');
 $packagexml->setAPIStability('beta');
 

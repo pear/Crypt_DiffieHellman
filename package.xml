@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package packagerversion="1.6.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
-    http://pear.php.net/dtd/tasks-1.0.xsd
-    http://pear.php.net/dtd/package-2.0
-    http://pear.php.net/dtd/package-2.0.xsd">
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
  <name>Crypt_DiffieHellman</name>
  <channel>pear.php.net</channel>
  <summary>Implementation of Diffie-Hellman Key Exchange cryptographic protocol for PHP5</summary>
@@ -11,23 +8,32 @@ in PHP5. Enables two parties without any prior knowledge of each other
 establish a secure shared secret key across an insecure channel
 of communication.</description>
  <lead>
+  <name>Bill Shupp</name>
+  <user>shupp</user>
+  <email>shupp@php.net</email>
+  <active>yes</active>
+ </lead>
+ <lead>
   <name>Pádraic Brady</name>
   <user>padraic</user>
   <email>padraic@php.net</email>
-  <active>yes</active>
+  <active>no</active>
  </lead>
- <date>2007-09-30</date>
- <time>13:29:56</time>
+ <date>2009-05-29</date>
+ <time>18:40:37</time>
  <version>
-  <release>0.2.1</release>
-  <api>0.2.1</api>
+  <release>0.2.2</release>
+  <api>0.2.2</api>
  </version>
  <stability>
   <release>beta</release>
   <api>beta</api>
  </stability>
  <license uri="http://opensource.org/licenses/bsd-license.php">New BSD License</license>
- <notes>* Fixed base install directory bug in package.xml</notes>
+ <notes>
+* Fixed Bug #16214
+* Fixed Bug #15682
+ </notes>
  <contents>
   <dir baseinstalldir="Crypt" name="/">
    <dir name="DiffieHellman">
@@ -56,7 +62,7 @@ of communication.</description>
  <dependencies>
   <required>
    <php>
-    <min>5.0.0</min>
+    <min>5.2.0</min>
    </php>
    <pearinstaller>
     <min>1.4.0b1</min>
@@ -75,6 +81,22 @@ of communication.</description>
  <changelog>
   <release>
    <version>
+    <release>0.2.2</release>
+    <api>0.2.2</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2009-05-29</date>
+   <license uri="http://opensource.org/licenses/bsd-license.php">New BSD License</license>
+   <notes>
+* Fixed Bug #16214
+* Fixed Bug #15682
+   </notes>
+  </release>
+  <release>
+   <version>
     <release>0.2.1</release>
     <api>0.2.1</api>
    </version>
@@ -84,7 +106,9 @@ of communication.</description>
    </stability>
    <date>2007-09-30</date>
    <license uri="http://opensource.org/licenses/bsd-license.php">New BSD License</license>
-   <notes>* Fixed base install directory bug in package.xml</notes>
+   <notes>
+* Fixed base install directory bug in package.xml
+   </notes>
   </release>
  </changelog>
 </package>
