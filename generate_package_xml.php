@@ -40,8 +40,8 @@ $packagexml->setLicense('New BSD License', 'http://opensource.org/licenses/bsd-l
 $packagexml->addRelease();
 $packagexml->generateContents();
 
-$packagexml->setAPIVersion('0.2.2');
-$packagexml->setReleaseVersion('0.2.2');
+$packagexml->setAPIVersion('0.2.3');
+$packagexml->setReleaseVersion('0.2.3');
 $packagexml->setReleaseStability('beta');
 $packagexml->setAPIStability('beta');
 
