@@ -19,11 +19,17 @@ of communication.</description>
   <email>padraic@php.net</email>
   <active>no</active>
  </lead>
- <date>2009-05-29</date>
- <time>18:40:37</time>
+ <lead>
+  <name>Bill Shupp</name>
+  <user>shupp</user>
+  <email>shupp@php.net</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-06-29</date>
+ <time>08:47:36</time>
  <version>
-  <release>0.2.2</release>
-  <api>0.2.2</api>
+  <release>0.2.3</release>
+  <api>0.2.3</api>
  </version>
  <stability>
   <release>beta</release>
@@ -31,8 +37,7 @@ of communication.</description>
  </stability>
  <license uri="http://opensource.org/licenses/bsd-license.php">New BSD License</license>
  <notes>
-* Fixed Bug #16214
-* Fixed Bug #15682
+* Fixed Bug #16379
  </notes>
  <contents>
   <dir baseinstalldir="Crypt" name="/">
@@ -87,6 +92,21 @@ of communication.</description>
  </dependencies>
  <phprelease />
  <changelog>
+  <release>
+   <version>
+    <release>0.2.3</release>
+    <api>0.2.3</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2009-06-29</date>
+   <license uri="http://opensource.org/licenses/bsd-license.php">New BSD License</license>
+   <notes>
+* Fixed Bug #16379
+   </notes>
+  </release>
   <release>
    <version>
     <release>0.2.2</release>

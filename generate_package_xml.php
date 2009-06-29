@@ -27,8 +27,7 @@ $packagexml->setDescription("Implementation of the Diffie-Hellman Key Exchange c
 $packagexml->setChannel('pear.php.net');
 
 $notes = <<<EOT
-* Fixed Bug #16214
-* Fixed Bug #15682
+* Fixed Bug #16379
 EOT;
 $packagexml->setNotes($notes);
 
