@@ -17,8 +17,8 @@
  * acceptance of that proposal:
  *      http://framework.zend.com/wiki/pages/viewpage.action?pageId=20369
  *
- * @category   Zend
- * @package    Crypt_DiffieHellman_Math
+ * @category   Encryption
+ * @package    Crypt_DiffieHellman
  * @subpackage BigInteger
  * @copyright  Copyright (c) 2007 Pádraic Brady (http://blog.astrumfutura.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
@@ -29,7 +29,7 @@
  *
  * Crypt_DiffieHellman_Math_BigInteger_Bcmath is a wrapper across the PHP BCMath extension.
  *
- * @category   Zend
+ * @category   Encryption
  * @package    Crypt_DiffieHellman
  * @subpackage BigInteger
  * @author     Pádraic Brady (http://blog.astrumfutura.com)

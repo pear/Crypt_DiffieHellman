@@ -51,7 +51,7 @@ require_once 'Crypt/DiffieHellman/Math/BigInteger/Interface.php';
  * Crypt_DiffieHellman_Math_BigInteger_Gmp is a wrapper across the PHP GMP extension.
  *
  * @category   Encryption
- * @package    Crypt_DiffieHellman_Math
+ * @package    Crypt_DiffieHellman
  * @subpackage BigInteger
  * @author     Pádraic Brady (http://blog.astrumfutura.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License

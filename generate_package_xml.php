@@ -3,7 +3,7 @@ require_once('PEAR/PackageFileManager2.php');
 PEAR::setErrorHandling(PEAR_ERROR_DIE);
 
 $options = array(
-    'filelistgenerator' => 'cvs',
+    'filelistgenerator' => 'svn',
     'changelogoldtonew' => false,
     'simpleoutput'      => true,
     'baseinstalldir'    => 'Crypt',
@@ -27,7 +27,7 @@ $packagexml->setDescription("Implementation of the Diffie-Hellman Key Exchange c
 $packagexml->setChannel('pear.php.net');
 
 $notes = <<<EOT
-* Fixed Bug #16379
+* Make bcmath required, gmp optional instead of the other way around
 EOT;
 $packagexml->setNotes($notes);
 
@@ -39,8 +39,8 @@ $packagexml->setLicense('New BSD License', 'http://opensource.org/licenses/bsd-l
 $packagexml->addRelease();
 $packagexml->generateContents();
 
-$packagexml->setAPIVersion('0.2.3');
-$packagexml->setReleaseVersion('0.2.3');
+$packagexml->setAPIVersion('0.2.4');
+$packagexml->setReleaseVersion('0.2.4');
 $packagexml->setReleaseStability('beta');
 $packagexml->setAPIStability('beta');
 
