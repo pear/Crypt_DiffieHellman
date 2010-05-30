@@ -68,7 +68,7 @@ class Crypt_DiffieHellman_Math_BigInteger
     protected $_math = null;
 
     /**
-     * Constructor; a Factory which detects a suitable PHP extension for
+     * Constructor; Detects a suitable PHP extension for
      * arbitrary precision math and instantiates the suitable wrapper
      * object.
      *
@@ -78,16 +78,40 @@ class Crypt_DiffieHellman_Math_BigInteger
      */
     public function __construct($extension = null)
     {
-        if ($extension == 'gmp' || (extension_loaded('gmp') || @dl('gmp.' . PHP_SHLIB_SUFFIX) || @dl('php_gmp.' . PHP_SHLIB_SUFFIX))) {
-            require_once 'Crypt/DiffieHellman/Math/BigInteger/Gmp.php';
-            $this->_math = new Crypt_DiffieHellman_Math_BigInteger_Gmp();
-        } elseif ($extension == 'bcmath' || (extension_loaded('bcmath') || @dl('bcmath.' . PHP_SHLIB_SUFFIX) || @dl('php_bcmath.' . PHP_SHLIB_SUFFIX))) {
-            require_once 'Crypt/DiffieHellman/Math/BigInteger/Bcmath.php';
-            $this->_math = new Crypt_DiffieHellman_Math_BigInteger_Bcmath();
-        } else {
-            require_once 'Crypt/DiffieHellman/Math/BigInteger/Exception.php';
-            throw new Crypt_DiffieHellman_Math_BigInteger_Exception('no big integer precision math support detected');
+        if ($extension === null) {
+            if (extension_loaded('gmp')) {
+                $extension = 'gmp';
+            } else if (extension_loaded('bcmath')) {
+                $extension = 'bcmath';
+            } else {
+                throw new Crypt_DiffieHellman_Math_BigInteger_Exception(
+                    'gmp or bcmath extensions required'
+                );
+            }
         }
+
+        $this->_math = $this->factory($extension);
+    }
+
+    /*
+     * Factory for instantiating the big integer driver
+     */
+    protected function factory($driver)
+    {
+        $extensions = array(
+            'gmp' => 'Gmp',
+            'bcmath' => 'Bcmath'
+        );
+
+        if (!isset($extensions[$driver])) {
+            throw new Crypt_DiffieHellman_Math_BigInteger_Exception('Invalid big integer precision math extension');
+        }
+
+        $class = 'Crypt_DiffieHellman_Math_BigInteger_' . $extensions[$driver];
+        $file =  str_replace('_', DIRECTORY_SEPARATOR, $class) . '.php';
+
+        include_once $file;
+        return new $class;
     }
 
     /**

@@ -6,7 +6,7 @@ $options = array(
     'filelistgenerator' => 'svn',
     'changelogoldtonew' => false,
     'simpleoutput'      => true,
-    'baseinstalldir'    => 'Crypt',
+    'baseinstalldir'    => '/',
     'packagedirectory'  => dirname(__FILE__),
     'clearcontents'     => true,
     'ignore'            => array('generate_package_xml.php', '.svn', '.cvs*'),
@@ -40,7 +40,7 @@ $packagexml->addRelease();
 $packagexml->generateContents();
 
 $packagexml->setAPIVersion('0.2.4');
-$packagexml->setReleaseVersion('0.2.4');
+$packagexml->setReleaseVersion('0.2.5');
 $packagexml->setReleaseStability('beta');
 $packagexml->setAPIStability('beta');
 
