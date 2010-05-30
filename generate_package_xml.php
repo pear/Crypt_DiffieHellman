@@ -27,7 +27,7 @@ $packagexml->setDescription("Implementation of the Diffie-Hellman Key Exchange c
 $packagexml->setChannel('pear.php.net');
 
 $notes = <<<EOT
-* Make bcmath required, gmp optional instead of the other way around
+* Fixes #17446.  Removed dl() support for loading big integer extensions
 EOT;
 $packagexml->setNotes($notes);
 
