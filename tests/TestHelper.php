@@ -1,6 +1,5 @@
 <?php
 
-error_reporting( E_ALL | E_STRICT );
 date_default_timezone_set('Europe/London');
 
 $prRoot    = dirname(dirname(__FILE__));
