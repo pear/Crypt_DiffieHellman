@@ -41,10 +41,6 @@
  * @link        http://
  */
 
-/**
- * PEAR_Exception
- */
-require_once 'PEAR/Exception.php';
 
 /**
  * Crypt_DiffieHellman_Exception
@@ -58,5 +54,6 @@ require_once 'PEAR/Exception.php';
  * @version    @package_version@
  * @access     public
  */
-class Crypt_DiffieHellman_Exception extends PEAR_Exception
-{}
+class Crypt_DiffieHellman_Exception extends Exception
+{
+}

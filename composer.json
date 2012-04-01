@@ -30,9 +30,6 @@
     "suggest": {
         "ext-gmp": "May require the gmp PHP extension"
     },
-    "require": {
-        "pear/pear_exception": "^1.0.0"
-    },
     "require-dev": {
         "phpunit/phpunit": "^5.7"
     }
