@@ -33,7 +33,7 @@
     ],
     "autoload": {
         "psr-0": {
-            "Crypt_DiffieHellman": "./"
+            "Crypt": "./"
         }
     },
     "description": "More info available on: http://pear.php.net/package/Crypt_DiffieHellman",
@@ -51,7 +51,8 @@
         "ext-gmp": "May require the gmp PHP extension"
     },
     "require": {
-        "pear/pear_exception": "*"
+        "pear/pear_exception": "*",
+        "pear/pear": "*"
     },
     "require-dev": {
         "phpunit/phpunit": "*"
