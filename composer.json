@@ -1,0 +1,60 @@
+{
+    "authors": [
+        {
+            "email": "shupp@php.net",
+            "name": "Bill Shupp",
+            "role": "Lead"
+        },
+        {
+            "email": "padraic@php.net",
+            "name": "P\u00e1draic Brady",
+            "role": "Lead"
+        },
+        {
+            "email": "shupp@php.net",
+            "name": "Bill Shupp",
+            "role": "Lead"
+        },
+        {
+            "email": "shupp@php.net",
+            "name": "Bill Shupp",
+            "role": "Lead"
+        },
+        {
+            "email": "shupp@php.net",
+            "name": "Bill Shupp",
+            "role": "Lead"
+        },
+        {
+            "email": "shupp@php.net",
+            "name": "Bill Shupp",
+            "role": "Lead"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Crypt": "./"
+        }
+    },
+    "description": "More info available on: http://pear.php.net/package/Crypt_DiffieHellman",
+    "include-path": [
+        "./"
+    ],
+    "license": "New BSD License",
+    "name": "pear/crypt_diffiehellman",
+    "support": {
+        "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=Crypt_DiffieHellman",
+        "source": "https://github.com/pear/Crypt_DiffieHellman"
+    },
+    "type": "library",
+    "suggest": {
+        "ext-gmp": "May require the gmp PHP extension"
+    },
+    "require": {
+        "pear/pear_exception": "*",
+        "pear/pear": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    }
+}
