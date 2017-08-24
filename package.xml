@@ -19,30 +19,6 @@ of communication.</description>
   <email>padraic@php.net</email>
   <active>no</active>
  </lead>
- <lead>
-  <name>Bill Shupp</name>
-  <user>shupp</user>
-  <email>shupp@php.net</email>
-  <active>yes</active>
- </lead>
- <lead>
-  <name>Bill Shupp</name>
-  <user>shupp</user>
-  <email>shupp@php.net</email>
-  <active>yes</active>
- </lead>
- <lead>
-  <name>Bill Shupp</name>
-  <user>shupp</user>
-  <email>shupp@php.net</email>
-  <active>yes</active>
- </lead>
- <lead>
-  <name>Bill Shupp</name>
-  <user>shupp</user>
-  <email>shupp@php.net</email>
-  <active>yes</active>
- </lead>
  <date>2010-05-29</date>
  <time>20:48:57</time>
  <version>
@@ -112,6 +88,7 @@ of communication.</description>
  </dependencies>
  <phprelease />
  <changelog>
+
   <release>
    <version>
     <release>0.2.5</release>
@@ -127,6 +104,7 @@ of communication.</description>
 * Fixes #17446.  Removed dl() support for loading big integer extensions
    </notes>
   </release>
+
   <release>
    <version>
     <release>0.2.4</release>
@@ -142,6 +120,7 @@ of communication.</description>
 * Make bcmath required, gmp optional instead of the other way around
    </notes>
   </release>
+
   <release>
    <version>
     <release>0.2.3</release>
