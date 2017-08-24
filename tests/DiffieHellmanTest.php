@@ -1,8 +1,6 @@
 <?php
-
-require_once dirname(__FILE__) . '/TestHelper.php';
+require_once __DIR__ . '/TestHelper.php';
 require_once 'Crypt/DiffieHellman.php';
-require_once 'PHPUnit/Framework/TestCase.php';
 
 /**
  * Note: If this test utilises BCMath it will take anything up 2 or 3 minutes to complete. GMP
